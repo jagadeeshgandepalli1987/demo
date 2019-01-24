@@ -12,23 +12,25 @@ import com.example.domain.Employee;
 
 @SpringBootApplication
 @RestController
-
 public class DemoApplication {
 	
 	@Autowired
 	RestTemplate restTemplate;
 
 	public static void main(String[] args) {
+		System.out.println("Rest application Starter");
 		SpringApplication.run(DemoApplication.class, args);
 	}
 	
 	@RequestMapping(value = "/")
 	   public String hello() {
+		System.out.println("Rest controller starter");
 	      return "Hello World Jagadeesh";
 	   }
 	
 	@RequestMapping(value = "/hello")
 	   public String hello1() {
+		System.out.println("Rest controller Hello world");
 	      return "May be your world is different";
 	   }
 	
