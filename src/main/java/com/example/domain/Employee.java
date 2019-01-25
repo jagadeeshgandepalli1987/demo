@@ -36,7 +36,5 @@ public class Employee {
 	public void seteAdd(String eAdd) {
 		this.eAdd = eAdd;
 	}
-	
-	
 
 }
