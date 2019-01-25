@@ -12,6 +12,7 @@ public class Employee {
 	
 	public Employee(int empNo, String eName, String eAdd) {
 		super();
+		System.out.println("Employee with parameters");
 		this.empNo = empNo;
 		this.eName = eName;
 		this.eAdd = eAdd;
